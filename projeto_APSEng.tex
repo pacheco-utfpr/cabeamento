@@ -60,7 +60,7 @@
 %% ====================================
 %% ====================================
 
-\lfoot{\footnotesize \texttt{Cabeamento estruturado} \textbullet ~Projeto CRPM}
+\lfoot{\footnotesize \texttt{Cabeamento estruturado} \textbullet ~Projeto de Infraestrutura de Redes - APS Engenharia}
 
 
 \cfoot{}
@@ -86,7 +86,7 @@
 									  	\rule{\linewidth}{1pt}%
 										}
 
-\pretitle{\vspace{-30pt} \begin{flushleft} \HorRule 
+\pretitle{\vspace{-10pt} \begin{flushleft} \HorRule 
 				\fontsize{40}{40} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont 
 				}
 
@@ -96,7 +96,7 @@
 %% ====================================
 %% ====================================
 
-\title{Projeto de Reestruturação de Infraestrutura de Rede de Dados - CRPM}					% Title of your article goes here
+\title{Projeto de Infraestrutura de Rede de Dados - APS Engenharia}					% Title of your article goes here
 
 %% ====================================
 
@@ -134,8 +134,7 @@
 %% ====================================
 %% ====================================
 
-\initial{O}\textbf{
-presente projeto destina-se ao planejamento da reestruturação da infraestrutura da rede de comunicação de dados da unidade pública estadual denominada CRPM. Levando em consideração que a supracitada repartição pública foi inaugurada em agosto de 2011, e que o imóvel era ocupado anteriormente por outras empresas, e sua infraestrutura de rede de dados foi projetada e instalada na construção da edificação, e que, não consta a idade do prédio nos registros locais, verifica-se a necessidade da realização da reestruturação e manutenção preventiva da referida estrutura, a fim de garantir a disponibilidade e operacionalidade das atividades técnicas-operacionais-administrativas, as quais dependem essencialmente de recursos de tecnologia, principalmente da rede de computadores. Nesse sentindo, cabe ressaltar que todas as aplicações, serviços e armazenamento de dados utilizados pelos usuários do referido local encontram-se na nuvem.}
+\initial{O}\textbf{presente projeto destina-se ao planejamento da implantação simulada da infraestrutura da rede de comunicação de dados da empresa fictícia APS Engenharia. Para tanto, tem-se a premissa de que o edifício encontra-se incorporado, no entanto, não possui elementos de infraestrutura adequados para a instalação de componentes de rede. O presente estudo irá definir um novo projeto de redes para a empresa, observando os passivos que serão empregados, a fim de garantir o plano de certificação. Com o levantamento da planta física da edificação, será executado o levando de custos e quantidade de materiais, bem como da terceirização de serviços de instalação de condutores externos, haja vista o prédio não possuir tal elemento de infraestrutura. Constituirá o corrente documento, informações sobre os procedimentos de manutenção após a implantação. Registra-se ainda que a empresa torna-se diretamente dependente da rede de comunicação de dados, uma vez que, todas as ferramentas de software e armazenamento de dados da empresa estão diretamente ligados aos serviços de cloud computing.}
 
 
 %% ====================================
@@ -197,27 +196,40 @@ Caso tenha rede, deixe claro:
 Crie uma enumeração dos requisitos do projeto.
 
 \section{Usuários e Aplicativos}
-Atualmente a unidade possui 34 funcionários, e de acordo com o projeto administrativo a previsão é de 33 colaboradores, não existindo a previsão de aumento do quadro. 
-Hodiernamente o parque de informática possui de ativos em sua planta 34 estações de trabalho (tipo Desktop), 8 notebooks, 3 servidores (arquivos, backup e FTP) e 2 impressoras de rede. 
-A comunicação de dados interna é realizada através de pontos de rede cabeados, sendo vedada a utilização de rede sem fio local, em cumprimento a normas internas. 
-A rede WAN é fornecida através de fibra óptica pela operadora licitada pelo Estado, sendo utilizado um conversor ótico marca Datacom, conectado diretamente a um switch. A rede é do tipo extranet com servidores de proxy, firewall administrados pelo setor de tecnologia do órgão através de Data Center na cidade de Curitiba/PR.
-A edificação possui 33 pontos de rede espalhados pelo prédio em tomadas RJ45, sendo todos concentrados em 2 patch panels instalados em um armário de equipamentos. Na ausência da disponibilidade de pontos de rede para atender estações de trabalho próximas, estão sendo utilizados switches de 5 a 8 portas 10/100 para atender a demanda.
-No armário retromencionado também encontram-se instalados 2 switchs de 24 portas 10/100 da marca Encore. No mesmo local encontram-se 2 servidores locais (arquivos e FTP).
- 
- 
+
 \subsection{Usuários}
-Conforme informação supracitada, a unidade possui 34 usuários ativos que utilizam o parque de informática em sua totalidade.
-Os usuários em sua maioria exercem funções exclusivamente administrativas e em geral possuem conhecimentos amplos para utilização dos recursos tecnológicos disponíveis, embora não existam profissionais com formação técnica ou acadêmica das áreas de ciências da computação. 
+A empresa possui 21 colaboradores, sendo que 19 são usuários ativos do parque de informática da entidade.
+Os usuários em sua maioria exercem funções exclusivamente administrativas e em geral possuem conhecimentos amplos para utilização dos recursos tecnológicos disponíveis, sendo atendidos por um colaborador que exerce a função de suporte e é responsável pelos ativos e passivos da estrutura tecnológica da empresa. Este por sua vez, possui formação acadêmica na área de ciências da computação.
+Existe a perspectiva de crescimento de 20 porcento no quadro de colaboradores para os próximos 3 anos.
 
 \subsection{Aplicativos}
-As ferramentas e serviços utilizados na unidade encontram-se em sua totalidade na nuvem, tornando esse o principal e mais importante ponto crítico. Os usuários utilizam o Domínio de rede para login nas estações de trabalho o qual é validado em LDAP remoto, utilizam sistemas de Intranet, provedor de e-mail próprio, ferramentas e softwares remotos, armazenamento de arquivos em servidor externo (NAS), acesso a internet com permissões de servidores de proxy e firewall remotos, entre outros.
+As ferramentas e serviços utilizados na unidade encontram-se em sua maioria na nuvem, tornando esse o principal e mais importante ponto crítico a ser considerado nesse projeto. Os usuários utilizam o Domínio de rede para login nas estações de trabalho o qual é validado em LDAP remoto, utilizam sistemas de Intranet, provedor de e-mail próprio, ferramentas e softwares remotos, armazenamento de arquivos em servidor externo (NAS), acesso a internet com permissões de servidores de proxy e firewall remotos, entre outros.
+
 
 \section{Estrutura predial existente}
 
-Explique aqui a planta física dos prédios
-Pode ser anexada, em escala ou não.
 
-Deve conter uma descrição geral, indicando a possível distância entre os pontos de rede e restrições de instalação.
+%inicio dos comandos para criar uma nova pagina A3 vertical
+\clearpage
+\KOMAoptions{paper=a3, paper=portrait, DIV=15}
+\recalctypearea
+
+
+\begin{figure}
+	%	\centering
+	\noindent\makebox[\textwidth][c]{
+		\includegraphics[height=\textheight]{plantabaixa}
+	}
+	\caption{Planta Baixa do Edifício da Empresa APS Engenharia.}
+	\label{plantabaixa}
+\end{figure}
+
+%Retornar ao formato A4
+\clearpage
+\KOMAoptions{paper=a4, paper=portrait, DIV=15}
+\recalctypearea
+%-- reinicio em A4 
+
 
 \section{Planta Lógica - Elementos estruturados}
 
