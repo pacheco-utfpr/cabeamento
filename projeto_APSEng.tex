@@ -272,8 +272,30 @@ Crie esboço da configuração dos racks e brackets. Explique cada um dos compon
 Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
 
 \subsection{Memorial descritivo}
-
+\begin{table}[]
+	\centering
+	\caption{Descrição dos elementos passivos do projeto}
+	\label{tab_passivos}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		\textbf{ELEMENTO PASSIVO}  & \textbf{QUANTIDADE} & \textbf{MEDIDA} & \textbf{FABRICANTE} \\ \hline
+		Rack Padrão Piso 32u       & 1                   & un              & Saint Blanc         \\ \hline
+		Patch Panel 24 Portas Cat6 & 2                   & un              & Furukawa            \\ \hline
+		Patch Cords Cat 6 - 1m     & 20                  & un              & Furukawa            \\ \hline
+		Patch Cords Cat 6 - 2m     & 20                  & un              & Furukawa            \\ \hline
+		Cabo UTP Cat 6             & 966                 & m               & Furukawa            \\ \hline
+		Tomadas para embutir RJ45  & 40                  & un              & Enerbras            \\ \hline
+		Eletroduto 2"              & 98,5                & m               & Tigre               \\ \hline
+		Eletroduto 1.1/4"          & 100                 & m               & Tigre               \\ \hline
+		Fita Hellerman 230mm       & 200                 & un              & Tyton               \\ \hline
+		Régua de energia 1u        & 2                   & un              & Fiolux              \\ \hline
+		Régua organizadora 1u      & 2                   & un              & Pier Telecom        \\ \hline
+		Bandejas para Rack 2u      & 3                   & un              & Cwb Metal           \\ \hline
+	\end{tabular}
+\end{table}
 Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
+
+
 
 \subsection{Identificação dos cabos}
 Explique como os cabos serão identificados em seu projeto. Coloque uma relação dos cabos instalados e identificados.
@@ -327,133 +349,5 @@ Analisando os pressupostos de \cite{ref3} e \cite{ref4} concluimos que....
 \bibliographystyle{ieeetr}
 \bibliography{referencias}  
 
-%% ***********************************************************************
-%% === remover daqui =====================================================
-%% ***********************************************************************
-=================================================
-\section{Elementos textuais - Alguns exemplos}
-
-Esta seção apresenta exemplos de elementos textuais. \textbf{Remova-a da versão final do texto}.
-
-
-\subsection{Colocar elementos em itens}
-
-Texto antes da lista
-
-\begin{itemize}
-	\item First item in a list 
-	\item Second item in a list 
-	\item Third item in a list
-\end{itemize}
-
-\subsubsection{Uma subseção de terceiro nivel}
-
-Exemplo de uma subseção
-
-\subsection{Tabelas}
-
-Utilize o site http://www.tablesgenerator.com/ para elaborar as tabelas de seu trabalho.
-Para adicionar uma tabela utilize: a tag input, passando o arquivo da tabela como parametro
-
-\input{tab2}
-
-Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo:
-Na tab \ref{tab2} temos a relação de ....
-
-
-Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
-
-\subsection{Figuras}
-
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
-
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{fig1}
-\caption{Exemplo de figura com escala horizontal}
-\label{fig1}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[]{fig2}
-	\caption{Exemplo de figura sem escala}
-	\label{fig2}
-\end{figure}
-
-Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
-
-\begin{figure}
-	\centering
-	\includegraphics[height=\textwidth,angle=-90]{fig3}
-	\caption{Exemplo de figura rotacionada}
-	\label{fig3}
-\end{figure}
-
-Você também pode inserir páginas de outro tamanho em seu texto. Isto irá ajudar a inserir imagens maiores, como as desenvolvidas em CAD. Segue um exemplo na figura \ref{fig4} e figura \ref{fig5}.
-
-
-%inicio dos comandos para criar uma nova pagina A3
-\clearpage
-\KOMAoptions{paper=a3, pagesize}
-\recalctypearea
-
-\begin{figure}
-	\centering
-	\makebox[\textwidth][c]{
-		\includegraphics[height=\textheight]{fig3}}
-	\caption{Exemplo de figura inserida em uma página A3}
-	\label{fig4}
-\end{figure}
-
-%Retornar ao formato A4
-\clearpage
-\KOMAoptions{paper=a4, pagesize}
-\recalctypearea
-%-- reinicio em A4 
-
-
-%inicio dos comandos para criar uma nova pagina A3 horizontal
-\clearpage
-\KOMAoptions{paper=a3, paper=landscape, DIV=20}
-\recalctypearea
-
-	
-\begin{figure}
-%	\centering
-	\noindent\makebox[\textwidth][c]{
-		\includegraphics[width=\textwidth]{fig3}
-	}
-	\caption{Exemplo de figura inserida em uma página A3 no formato horizontal}
-	\label{fig5}
-\end{figure}
-
-%Retornar ao formato A4
-\clearpage
-\KOMAoptions{paper=a4, paper=portrait, DIV=15}
-\recalctypearea
-%-- reinicio em A4 
-
-
-\subsubsection{Resumo gráfico}
-
-Você pode optar por fazer um resumo no formato de mapa mental/conceitual. 
-Aqui foi utilizado o site https://app.mindmup.com para gerar o mapa.
-
-Para utilizar o resumo gráfico, remova o texto da seção resumo (linha 137) e inclua o código para inserir a figura, conforme figura \ref{fig6}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth,height=5cm,keepaspectratio]{fig4}
-	\caption{Exemplo de resumo gráfico}
-	\label{fig6}	
-\end{figure}
-
-%% ***********************************************************************
-%% === ate aqui    =====  ================================================
-%% ***********************************************************************
 
 \end{document}
