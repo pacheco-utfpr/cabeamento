@@ -167,29 +167,44 @@
 %% ====================================
 %% ====================================
 \section{Introdução}
-Explique nesta primeira seção qual seria o perfil do caso. Perfil do cliente, quantidade de colaboradores, quantidade de equipamentos de TI atualmente.
+A empresa fictícia APS Engenharia atua no setor de prestação de serviços de telecomunicação, possuindo contrato ativo de outsourcing com uma organização de grande porte de referência nacional no segmento. A empresa em estudo é considerada de médio porte e possui em seu quadro funcional diversos colaboradores, no entanto, levando em consideração as necessidades do delineamento do presente documento, serão considerados apenas os funcionários que desenvolvem suas atividades na sede da empresa, local pelo qual está sendo formulado o presente projeto.
+O parque de informática da organização é moderno, sendo os dispositivos adquiridos recentemente, estando ainda no período de garantia do fabricante. A conexão com a rede mundial de computadores é fornecida através de provedor via rádiofrequêcia em velocidade contratual de 60 Mbps, com transmissão de 2.4 Ghz. 
+O propósito do referido estudo é subsidiar a equipe técnica e de gestão da empresa na preparação do edifício para implantação de rede de dados cabeada, capaz de atender as demandas administrativas que atualmente possuem sistemas de software e armazenamento de dados em nuvem, com projeção de certificação da rede e contratação de plano de provimento de comunicação de dados dedicado acima de 200 Mbps, fornecidos pela operadora através de rede de fibra óptica.
 
-Indique também nesta seção o escopo do projeto.
 
-Apresente um overview do parque tecnológico do caso.
 \subsection{Benefícios}
-Explique quais seriam os benefícios provenientes após a execução deste projeto.
+Dentre os diversos benefícios de um projeto de estruturação de rede de dados está a garantia de usabilidade e de disponibilidade da rede, a possibilidade de certificação física da estrutura de passivos, ressaltando que a atividade fim da organização é justamente a prestação de serviços no segmento de comunicação. Alguns benefícios secundários e não menos importantes estão relacionados a qualidade técnica para desenvolvimento das atividades administrativas e na agilidade e facilidade de prestar suporte técnico preventivo e corretivo na infraestrutura de dados.
 
 \subsection{Organizações Envolvidas}
-Coloque o nome de todas as organizações envolvidas. Se for um projeto real, identifique quais as responsabilidades de cada uma das organizações. É comum que em um projeto de redes (cabeamento), temos várias organizações, sendo que cada uma delas com uma determinada responsabilidade.
+Para a implantação do projeto, algumas empresas/profissionais deverão ser contratadas para a realização dos serviços de acesso, infraestrutura, suporte e manutenção. 
 
-Sugestão: crie uma tabela contento a relação delas.
+\begin{table}[]
+	\centering
+	\caption{Empresas envolvidas no projeto}
+	\label{tab_empresas}
+	\begin{tabular}{|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Descrição  do Serviço}} & \multicolumn{1}{c|}{\textbf{Empresa  / Profissional}} \\ \hline
+		Projeto de rede                                      & Engenheiro de telecomunicação                         \\ \hline
+		Instalação de eletrodutos                            & Engenheiro civil / Engenheiro elétrico                \\ \hline
+		Instalação da rede cabeada                           & Instalador de redes                                   \\ \hline
+		Orçamento e compras                                  & Analista de compras                                   \\ \hline
+		Provedor de internet – Acesso Principal              & Empresa de Telecom 1                                  \\ \hline
+		Provedor de internet – Acesso de contingência        & Empresa de Telecom 2                                  \\ \hline
+		Certificação da rede                                 & Empresa certificadora credenciada                     \\ \hline
+		Instalação e suporte dos equipamentos de informática & Engenheiro da Computação                              \\ \hline
+	\end{tabular}
+\end{table}
 
 
 
 \section{Estado atual}
-Aprente o estado atual da rede. Caso não tenha rede, desconsiderar esta seção.
+A rede de comunicação de dados atual não possui padronização, sendo atendida basicamente por um provedor de internet que fornece a conexão via rádio-frequência, e é distribuída internet para as estações de trabalho via pontos de acesso sem fio, com repetidores da mesma natureza ao longo do prédio.
 
-Caso tenha rede, deixe claro:
 \begin{itemize}
-	\item os passivos de rede atuais:path panels, cabos, etc..;
-	\item as principais reclamações dos usuários. Qual o principal motivo da reestruturação? Efetue uma pesquisa junto aos colaboradores para determinar quais problemas a rede apresenta.
-	\item Observações. Analise a rede e verifique se há estruturas que não se enquadram nas normas ou que indicam suspeita de problemas.
+	\item Passivos de rede atuais:2 roteadores sem fio e 4 repetidores sem fio;
+	\item Principais reclamações dos usuários: baixa qualidade de transmissão de dados, indisponibilidade recorrente da rede, falta de contingência de dados e provedor de serviços de internet não oferece suporte imediato.
+	\item Observações: O estado atual da rede é de extrema vulnerabilidade, uma vez que os pontos de acesso não estão ocultos e podem ser utilizados por pessoas mal intencionadas. Não existe um padrão ou norma que justifique o estado atual da rede, sendo que foi instalada emergencialmente apenas para atender as demandas administrativas da empresa até o término e implantação do projeto de rede cabeada.
 \end{itemize}
 
 \section{Requisitos}
